@@ -4,20 +4,19 @@
 }
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-
 :root {
   --font-family: 'Norse-Bold';
   --green: #596d48;
 }
 
 .roboto-medium {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-style: normal;
 }
 
 .roboto-bold {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-style: normal;
 }
@@ -72,9 +71,11 @@ select {
   display: flex;
   gap: 3rem;
   justify-content: center;
+  width: 80%;
+  /* max-width: 120rem; */
 }
 
-header{
+header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -87,7 +88,7 @@ header .logo {
   width: 80%;
 }
 
-.logo img{
+.logo img {
   width: 40%;
 }
 
@@ -116,4 +117,30 @@ main {
 .form_intro p {
   font-weight: bold;
   font-size: 1.5rem;
+}
+
+form{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  /* justify-content: space-around; */
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+label{
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-bottom: 0.2rem;
+  font-size: 0.8rem;
+}
+
+input{
+  border: 1px solid #e5e7eb;
+  border-radius: 0.2rem;
 }
