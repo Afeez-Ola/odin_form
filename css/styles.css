@@ -53,6 +53,10 @@ select {
   font: inherit;
 }
 
+a{
+  text-decoration: none;
+}
+
 .body {
   background-image: url('../assets/bg_image.jpg');
   background-size: 45% 100vh;
@@ -186,4 +190,8 @@ input:focus {
   background-color: var(--green);
   color: white;
   border-radius: 0.6rem;
+}
+
+.submit_form a{
+  color: var(--green);
 }
