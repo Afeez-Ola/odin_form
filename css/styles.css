@@ -24,6 +24,12 @@ body {
   background-position: left;
   background-repeat: no-repeat;
   height: 100vb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: black;
+
 }
 
 img, picture, video, canvas, svg {
@@ -35,3 +41,21 @@ input, button, textarea, select {
   font: inherit;
 }
 
+.container{
+  gap: 3rem;
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin: 10rem auto;
+    align-items: center;
+}
+
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+main{
+}
