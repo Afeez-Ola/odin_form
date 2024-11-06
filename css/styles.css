@@ -1,14 +1,30 @@
 @font-face {
-  font-family: "Norse-Bold";
-  src: url("../assets/Norse-Bold.otf");
+  font-family: 'Norse-Bold';
+  src: url('../assets/Norse-Bold.otf');
 }
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-:root{
-  --font-family: "Norse-Bold";
+
+:root {
+  --font-family: 'Norse-Bold';
   --green: #596d48;
 }
 
-*, *::before, *::after {
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -19,43 +35,85 @@
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  background-image: url("../assets/bg_image.jpg");
-  background-size: contain;
+  background-color: black;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.body {
+  background-image: url('../assets/bg_image.jpg');
+  background-size: 45% 100vh;
   background-position: left;
   background-repeat: no-repeat;
   height: 100vb;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 80%;
   background-color: white;
-  color: black;
-
+  margin: auto;
 }
 
-img, picture, video, canvas, svg {
-  display: block;
-  max-width: 100%;
-}
-
-input, button, textarea, select {
-  font: inherit;
-}
-
-.container{
+.container {
+  display: flex;
   gap: 3rem;
-    display: flex;
-    justify-content: space-around;
-    width: 70%;
-    margin: 10rem auto;
-    align-items: center;
+  justify-content: center;
 }
 
 header{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+header .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+.logo img{
+  width: 40%;
+}
+
+.logo h2 {
+  font-size: 5rem;
+  color: white;
+  font-weight: bold;
+  font-family: 'Norse-Bold';
+}
+
+main {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
   gap: 3rem;
 }
 
-main{
+.form_intro {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.form_intro p {
+  font-weight: bold;
+  font-size: 1.5rem;
 }
