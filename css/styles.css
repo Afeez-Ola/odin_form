@@ -166,3 +166,11 @@ input {
   border: 1px solid #e5e7eb;
   border-radius: 0.2rem;
 }
+
+input:invalid{
+  border-color: red;
+}
+
+input:focus{
+  border-color: blue;
+}
