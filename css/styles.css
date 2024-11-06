@@ -63,33 +63,36 @@ select {
   justify-content: center;
   align-items: center;
   width: 80%;
-  background-color: white;
+  background-color: #f9fafb;
   margin: auto;
 }
 
 .container {
   display: flex;
-  gap: 3rem;
+  /* gap: 3rem; */
   justify-content: center;
-  width: 80%;
-  /* max-width: 120rem; */
+  width: 100%;
 }
 
 header {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
+  width: 50%;
 }
 
 header .logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  padding: 2rem;
 }
 
 .logo img {
-  width: 40%;
+  width: 20%;
 }
 
 .logo h2 {
@@ -100,11 +103,21 @@ header .logo {
 }
 
 main {
-  flex: 2;
   display: flex;
   flex-direction: column;
   padding: 2rem;
   gap: 3rem;
+  width: 65%;
+}
+
+.form_section >p {
+  font-size: 1.5rem;
+  background-color: white;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  padding-inline: 5rem;
+  padding-top: 2rem;
+
 }
 
 .form_intro {
@@ -112,6 +125,8 @@ main {
   flex-direction: column;
   gap: 1rem;
   justify-content: center;
+  padding-inline: 5rem;
+
 }
 
 .form_intro p {
@@ -119,20 +134,27 @@ main {
   font-size: 1.5rem;
 }
 
-form{
+form {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 1.5rem;
-  /* justify-content: space-around; */
+  padding-inline: 5rem;
+  margin-top: 1rem;
+
+}
+.form_section {
+  background-color: white;
+  width: 100%;
+  
 }
 
-.form{
+.form {
   display: flex;
   flex-direction: column;
   width: 40%;
 }
-label{
+label {
   letter-spacing: 0.2rem;
   text-transform: uppercase;
   font-weight: 300;
@@ -140,7 +162,7 @@ label{
   font-size: 0.8rem;
 }
 
-input{
+input {
   border: 1px solid #e5e7eb;
   border-radius: 0.2rem;
 }
