@@ -27,6 +27,23 @@ document.getElementById('odin_form').addEventListener('submit', function (e) {
     phone: phoneNumber.value.trim()
   };
 
+  // Clear previous error states
+  function clearErrors() {
+    const errorElements = [
+      fName_error_message, lName_error_message, email_error_message,
+      phone_error_message, password_error_message, confirm_password_error_message,
+      general_error_message
+    ];
+    const fields = [firstName, lastName, email, phoneNumber, password, confirmPassword];
+    
+    // Reset all error messages and error class
+    errorElements.forEach(element => element.textContent = "");
+    fields.forEach(field => field.classList.remove("error"));
+    general_error_message.style.display = "none";
+  }
+
+  clearErrors();  // Reset errors before running validation
+
   function formValidation(formData) {
     const errors = [];
 
@@ -36,24 +53,15 @@ document.getElementById('odin_form').addEventListener('submit', function (e) {
     const passMaxLength = 12;
     const passMinLength = 6;
 
-    // Reset error messages
-    fName_error_message.textContent = "";
-    lName_error_message.textContent = "";
-    email_error_message.textContent = "";
-    phone_error_message.textContent = "";
-    password_error_message.textContent = "";
-    confirm_password_error_message.textContent = "";
-    general_error_message.textContent = "";
-
     // Validation logic
-    if (!formData.fName || formData.fName.length > maxLength || typeof formData.fName != String) {
-      fName_error_message.textContent = "First Name must be between 2 and 50 characters.";
+    if (!formData.fName || formData.fName.length > maxLength) {
+      fName_error_message.textContent = "First Name must be between 2 and 50 characters and non-empty.";
       firstName.classList.add('error');
       errors.push("Invalid First Name");
     }
 
-    if (!formData.lName || formData.lName.length > maxLength || typeof formData.lName !=String) {
-      lName_error_message.textContent = "Last Name must be between 2 and 50 characters.";
+    if (!formData.lName || formData.lName.length > maxLength) {
+      lName_error_message.textContent = "Last Name must be between 2 and 50 characters and non-empty.";
       lastName.classList.add('error');
       errors.push("Invalid Last Name");
     }
