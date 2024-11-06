@@ -110,14 +110,13 @@ main {
   width: 65%;
 }
 
-.form_section >p {
+.form_section > p {
   font-size: 1.5rem;
   background-color: white;
   width: 100%;
   margin-bottom: 0.5rem;
   padding-inline: 5rem;
   padding-top: 2rem;
-
 }
 
 .form_intro {
@@ -126,7 +125,6 @@ main {
   gap: 1rem;
   justify-content: center;
   padding-inline: 5rem;
-
 }
 
 .form_intro p {
@@ -141,12 +139,10 @@ form {
   gap: 1.5rem;
   padding-inline: 5rem;
   margin-top: 1rem;
-
 }
 .form_section {
   background-color: white;
   width: 100%;
-  
 }
 
 .form {
@@ -167,10 +163,10 @@ input {
   border-radius: 0.2rem;
 }
 
-input:invalid{
+#cpassword:invalid {
   border-color: red;
 }
 
-input:focus{
+input:focus {
   border-color: blue;
 }
