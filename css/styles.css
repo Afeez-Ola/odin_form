@@ -19,6 +19,11 @@
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  background-image: url("../assets/bg_image.jpg");
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+  height: 100vb;
 }
 
 img, picture, video, canvas, svg {
