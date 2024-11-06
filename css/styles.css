@@ -170,3 +170,20 @@ input {
 input:focus {
   border-color: blue;
 }
+
+.submit_form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding-inline: 5rem;
+  margin-top: 1rem;
+  width: 50%;
+}
+
+.submit_form button {
+  padding: 0.7rem;
+  background-color: var(--green);
+  color: white;
+  border-radius: 0.6rem;
+}
