@@ -57,6 +57,10 @@ a{
   text-decoration: none;
 }
 
+button{
+  cursor: pointer;
+}
+
 .body {
   background-image: url('../assets/bg_image.jpg');
   background-size: 45% 100vh;
@@ -180,9 +184,10 @@ input:focus {
   flex-direction: column;
   flex-wrap: wrap;
   gap: 1.5rem;
-  padding-inline: 5rem;
+  /* padding-inline: 5rem; */
   margin-top: 1rem;
-  width: 50%;
+  width: 100%;
+  justify-content: baseline;
 }
 
 .submit_form button {
@@ -190,8 +195,21 @@ input:focus {
   background-color: var(--green);
   color: white;
   border-radius: 0.6rem;
+  width: 40%;
 }
 
 .submit_form a{
   color: var(--green);
+}
+
+.error_message{
+  display: none;
+}
+
+.error{
+  border-color: red;
+}
+
+.error_message{
+  color: red;
 }
